@@ -1,8 +1,8 @@
-body{
-    background: black;
-}
 .img-cards {
 
+}
+.container-fluid .container{
+	color: white;
 }
 .logo {
      
@@ -41,4 +41,7 @@ body{
 
 .dropdown-menu > .dropdown-item:focus {
 	color: #000000;
+}
+.container-fluid{
+	background-color: black;
 }
