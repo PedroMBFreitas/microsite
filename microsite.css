@@ -2,7 +2,7 @@
 
 }
 .container-fluid .container{
-	color: white;
+	color: black;
 }
 .logo {
      
@@ -43,5 +43,5 @@
 	color: #000000;
 }
 .container-fluid{
-	background-color: black;
+	background-color: white;
 }
