@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>microsite</title>
+	<link rel="stylesheet" href="microsite.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<img src="./images/logo.png" class="navbar-brand logo" href="#"></img>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="navbarText">
+			<form class="form-inline my-2 my-lg-0s">
+				<input class="form-control mr-sm-2 pesquisa" type="search" placeholder="pesquisa" aria-label="Pesquisa" onkeyup="toggleSeparator(this);" >
+			</form>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row padding-top-10">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<div class="dropdown-menu lateral">
+					<h4 class="dropdown-header ">Categorias</h6>
+					<a class="dropdown-item" href="#process" data-toggle="collapse" data-target="#process">Processadores</a>
+					<a class="dropdown-item" href="#mem" data-toggle="collapse" data-target="#mem">Memórias</a>
+					<a class="dropdown-item" href="#disc" data-toggle="collapse" data-target="#disc">Discos</a>
+					<a class="dropdown-item" href="#moni" data-toggle="collapse" data-target="#moni">Monitores</a>
+					<a class="dropdown-item" href="#pgraf" data-toggle="collapse" data-target="#pgraf">Placas Gráficas</a>
+				</div>
+			</div>
+			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 ">
+				<div class="collapse multi-collapse" id="process">
+					<div class="card card-body">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 padding-top-10">
+								<div class="card" >
+									<img class="card-img-top" src="https://www.coolmatica.pt/loja/20309-tm_large_default/intel-coffee-lake-core-i7-8700k-37ghz-12mb-bx80684i78700k-.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title">Intel® Cofee Lake i7-8700K</h5>
+										<p class="card-text">391€</p>
+										<a href="processador1.html" class="btn btn-primary">Propriedades</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  padding-top-10">
+								<div class="card" >
+									<img class="card-img-top" src="https://www.coolmatica.pt/loja/19328-tm_large_default/intel-core-i5-8600k-hexa-core-36ghz-c-turbo-43ghz-9mb-skt1151-bx80684i58600k-.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title">Intel® Cofee Lake i5-8600k</h5>
+										<p class="card-text">280€</p>
+										<a href="processador2.html" class="btn btn-primary">Propriedades</a>
+									</div>
+								</div>
+							</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  padding-top-10">
+									<div class="card" >
+										<img class="card-img-top" src="https://www.coolmatica.pt/loja/13238-tm_home_default/intel-kaby-lake-i7-7700k-42ghz-a-46ghz-1151-fc-lga4-bx80677i77700k-.jpg" alt="Card image cap">
+										<div class="card-body">
+											<h5 class="card-title">Intel® Kaby Lake i7-7700k</h5>
+											<p class="card-text">315€</p>
+											<a href="processador3.html" class="btn btn-primary">Propriedades</a>
+										</div>
+									</div>
+								</div>									
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  padding-top-10">
+									<div class="card" >
+										<img class="card-img-top" src="https://www.coolmatica.pt/loja/13572-tm_large_default/intel-core-i5-7600k-38-ghz-kaby-lake-sk-1151-boxed-bx80677i57600k-.jpg" alt="Card image cap">
+										<div class="card-body">
+											<h5 class="card-title">Intel® Kaby Lake i5-7600k</h5>
+											<p class="card-text">218€</p>
+											<a href="processador4.html" class="btn btn-primary">Propriedades</a>
+										</div>
+									</div>
+								</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  padding-top-10">
+								<div class="card" >
+								<img class="card-img-top" src="https://www.coolmatica.pt/loja/13236-tm_large_default/intel-kaby-lake-i7-7700-36ghz-a-42ghz1151-bx80677i77700-.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title">Intel® Kaby Lake i7-7700</h5>
+										<p class="card-text">287€</p>
+										<a href="processador5.html" class="btn btn-primary">Propriedades</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="collapse multi-collapse" id="mem">
+						<div class="card card-body">
+							<img class="card-img-top" src="https://linustechtips.com/main/applications/core/interface/imageproxy/imageproxy.php?img=http://i.ytimg.com/vi/FAs2IMUDNec/maxresdefault.jpg&key=e2ffbed82632ced9aa9dcc700f24a491c5d3a0c4eeb037c9f23996997dd93a58"  alt="Card image cap">
+						</div>
+				  </div>  
+				  <div class="collapse multi-collapse" id="disc">
+						<div class="card card-body">
+						  <img class="card-img-top" src="https://www.coolmatica.pt/loja/15584-tm_thickbox_default/samsung-960-pro-2tb-ssd-m2-2280-nvme-mz-v6p2t0bw-.jpg"  alt="Card image cap">
+						</div>
+				  </div>
+  
+				  <div class="collapse multi-collapse" id="moni">
+						<div class="card card-body">
+						<img class="card-img-top" src="https://cccomputadores.com/8013-tm_thickbox_default/monitor-asus-rog-swift-pg248q-tn-24-fhd-169-180hz-g-sync.jpg"  alt="Card image cap">
+						</div>
+				  </div>
+  
+				  <div class="collapse multi-collapse" id="pgraf">
+						<div class="card card-body">
+							<img class="card-img-top" src="https://www.msi.com/asset/resize/image/global/product/product_0_20170323105218_58d33862572b9.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png"  alt="Card image cap">
+						</div>
+				  </div>
+			</div>
+		</div>
+	<script>
+	$(".dropdown-item").click(function(){
+		$('.multi-collapse').collapse('hide');
+
+
+	})
+
+	function toggleSeparator(elem)
+	{
+		keywords = {
+			process : /processadores/i, 
+			mem : /Memórias/i, 
+			disc : /Discos/i, 
+			moni : /Monitores/i,
+			pgraf : /Placas Gráficas/i
+		};
+
+		for (var key in keywords) {
+
+			if ($(elem).val().search(keywords[key]) > -1 ) {
+				$('.multi-collapse').collapse('hide');
+				$('#' + key).collapse('show');
+				$('#' + key).focus();
+				return true;
+			}
+		}
+
+		$('.multi-collapse').collapse('hide');
+		return false;
+	}
+	</script>
+</body>
+</html>

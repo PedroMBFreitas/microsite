@@ -1,0 +1,44 @@
+body{
+    background: black;
+}
+.img-cards {
+
+}
+.logo {
+     
+      background-repeat: no-repeat;
+      width: 200px;
+      height:auto;
+}
+
+.padding-top-10 {
+	padding-top: 10px;
+}
+.dropdown-header  {
+	background: #343a40;
+	font-size: large;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.dropdown-menu.lateral {
+	background: #343a40;
+	display:inline;
+	margin-left: 5px;
+	position: initial;
+	width: 100%;
+}
+.dropdown-menu > .dropdown-header {
+	color :#17a2b8;
+}
+
+.dropdown-menu > .dropdown-item {
+	color: #FFFFFF;
+}
+
+.dropdown-menu > .dropdown-item:hover {
+	color: #000000;
+}
+
+.dropdown-menu > .dropdown-item:focus {
+	color: #000000;
+}

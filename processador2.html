@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>microsite</title>
+    <link rel="stylesheet" href="microsite.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="./images/logo.png" class="navbar-brand logo" href="home.html"></img>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarText">
+            <form class="form-inline my-2 my-lg-0s">
+                <input class="form-control mr-sm-2 pesquisa" type="search" placeholder="pesquisa" aria-label="Pesquisa" onkeyup="toggleSeparator(this);" >
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row padding-top-10">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <div class="dropdown-menu lateral">
+                    <h4 class="dropdown-header ">Categorias</h6>
+                    <a class="dropdown-item" href="#process" data-toggle="collapse" data-target="#process">Processadores</a>
+                    <a class="dropdown-item" href="#mem" data-toggle="collapse" data-target="#mem">Memórias</a>
+                    <a class="dropdown-item" href="#disc" data-toggle="collapse" data-target="#disc">Discos</a>
+                    <a class="dropdown-item" href="#moni" data-toggle="collapse" data-target="#moni">Monitores</a>
+                    <a class="dropdown-item" href="#pgraf" data-toggle="collapse" data-target="#pgraf">Placas Gráficas</a>
+                </div>
+            </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+                            <b>Processador - Intel® Cofee Lake i5-8600K</b>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+                            <img src="https://www.coolmatica.pt/loja/20518-tm_cart_default/intel-coffee-lake-core-i7-8700k-37ghz-12mb-tray-cm8068403358220-.jpg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+                                Socket: LGA 1151
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+                            Número de Cores: 6
+                        </div>
+                    </div>	 
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+                            Número de Threads: 6
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+                            Frequência de relógio Base: 3.60GHz, 
+                            Turbo: 4.30GHz
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+                            Cache: 9 MB, Litografia: 14nm
+                        </div>
+                    </div>		
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+                            TDP Máximo: 95W
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+                            Arquitectura: Coffee Lake
+                        </div>
+                    </div>				 
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+                            Placa gráfica integrada: Intel UHD Graphics 630
+                        </div>
+                    </div>				
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+                            Tipo de memória: DDR4 @ 2666MHz até 64GBArquitectura Dual Channel
+                        </div>
+                    </div>			
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".dropdown-item").click(function(){
+            $('.multi-collapse').collapse('hide');
+        
+        
+        })
+        
+        function toggleSeparator(elem)
+        {
+            keywords = {
+                process : /processadores/i, 
+                mem : /Memórias/i, 
+                disc : /Discos/i, 
+                moni : /Monitores/i,
+                pgraf : /Placas Gráficas/i
+            };
+        
+            for (var key in keywords) {
+        
+                if ($(elem).val().search(keywords[key]) > -1 ) {
+                    $('.multi-collapse').collapse('hide');
+                    $('#' + key).collapse('show');
+                    $('#' + key).focus();
+                    return true;
+                }
+            }
+        
+            $('.multi-collapse').collapse('hide');
+            return false;
+        }
+    </script>
+</body>
+</html>
+            
